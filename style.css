@@ -170,3 +170,33 @@ a {
   --bg-url: url(./assets/bg-desktop-light.jpg);
  }
 }
+.wrapper-clock {
+    height: 85px;
+    width: auto;
+    cursor: default;
+    background: transparent;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 80px; /* Ajuste para mover mais para cima */
+    right: 600px; /* Ajuste para mover mais para a direita */
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-clock #time {
+    font-size: 30px;
+    line-height: 85px;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #000, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 3s linear infinite;
+}
+
+.wrapper-clock #period {
+    font-size: 20px;
+    margin-left: 5px;
+    color: #000;
+}
