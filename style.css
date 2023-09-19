@@ -139,7 +139,7 @@ ul li a:hover {
   display: flex;
   justify-content: center;
 
-  padding: 24px 0;
+
 
   font-size: 31px;
 }
@@ -203,9 +203,7 @@ a {
   cursor: default;
   background: transparent;
   border-radius: 6px;
-  position: absolute;
-  bottom: 80px; /* Ajuste para mover mais para cima */
-  right: 600px; /* Ajuste para mover mais para a direita */
+  justify-content: center;
   display: flex;
   align-items: center;
 }
