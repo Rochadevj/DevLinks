@@ -34,7 +34,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%px;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
 }
@@ -75,11 +76,16 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+
+  animation: slide-back 0.2s;
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.4s forwards;
+}
+
+#switch button:hover {
+  outline: 9px solid var(--highlight-color);
 }
 
 #switch span {
@@ -135,7 +141,7 @@ ul li a:hover {
 
   padding: 24px 0;
 
-  font-size: 29px;
+  font-size: 31px;
 }
 
 #social-links a {
@@ -146,6 +152,7 @@ ul li a:hover {
 
   transition: background 0.2s;
   border-radius: 50%;
+  margin-top: 40px;
 }
 
 #social-links a:hover {
@@ -162,41 +169,62 @@ a {
 }
 
 /* media queries */
-@media (min-width: 700px ) {
- :root {
-  --bg-url: url(./assets/bg-desktop.jpg);
- }
- .light {
-  --bg-url: url(./assets/bg-desktop-light.jpg);
- }
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
+
+/* animation */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
+/* Código do relógio */
 .wrapper-clock {
-    height: 85px;
-    width: auto;
-    cursor: default;
-    background: transparent;
-    border-radius: 6px;
-    position: absolute;
-    bottom: 80px; /* Ajuste para mover mais para cima */
-    right: 600px; /* Ajuste para mover mais para a direita */
-    display: flex;
-    align-items: center;
+  height: 85px;
+  width: auto;
+  cursor: default;
+  background: transparent;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 80px; /* Ajuste para mover mais para cima */
+  right: 600px; /* Ajuste para mover mais para a direita */
+  display: flex;
+  align-items: center;
 }
 
 .wrapper-clock #time {
-    font-size: 30px;
-    line-height: 85px;
-    color: #000;
-    font-weight: 600;
-    letter-spacing: 1px;
-    background: linear-gradient(135deg, #000, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animate 3s linear infinite;
+  font-size: 30px;
+  line-height: 85px;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #000, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 3s linear infinite;
 }
 
 .wrapper-clock #period {
-    font-size: 20px;
-    margin-left: 5px;
-    color: #000;
+  font-size: 20px;
+  margin-left: 5px;
+  color: #000;
 }
+
