@@ -162,7 +162,7 @@ footer {
   font-size: 16px;
 }
 a {
-  text-decoration: none; /* Remove sublinhado e decorações de texto */
+  text-decoration: none; 
 }
 
 /* media queries */
@@ -193,7 +193,7 @@ a {
     left: 0;
   }
 }
-/* Código do relógio */
+/* Watch code */
 .wrapper-clock {
   width: auto;
   cursor: default;
