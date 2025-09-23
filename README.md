@@ -11,7 +11,8 @@ Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnolog
   <a href="#memo-licença">Licença</a>
 </p>
 
-![image](https://github.com/Rochadevj/DevLinks/assets/81716008/9226affd-176a-453d-8df7-d37d38e51064)
+<img width="688" height="752" alt="image" src="https://github.com/user-attachments/assets/df61dac2-81e0-4333-a7ba-7938c015a406" />
+
 
 ## 🚀 Tecnologias
 
@@ -35,5 +36,3 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
 Esse projeto está sob a licença MIT.
 
 ---
-
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
