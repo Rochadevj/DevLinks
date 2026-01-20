@@ -11,8 +11,10 @@ Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnolog
   <a href="#memo-licença">Licença</a>
 </p>
 
-<img width="688" height="752" alt="image" src="https://github.com/user-attachments/assets/df61dac2-81e0-4333-a7ba-7938c015a406" />
-
+<div align="center">
+  <img width="488" height="601" alt="image"
+       src="https://github.com/user-attachments/assets/d0b59ca6-7fd5-40f8-a4d6-1641a253fafa" />
+</div>
 
 ## 🚀 Tecnologias
 
