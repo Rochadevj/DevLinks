@@ -1,8 +1,6 @@
 <h1 align="center"> DevLinks </h1>
 
-<p align="center">
-Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
-</p>
+<p align="center"> Meu agregador de links pessoal </p>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -12,9 +10,13 @@ Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnolog
 </p>
 
 <div align="center">
-  <img width="488" height="601" alt="image"
-       src="https://github.com/user-attachments/assets/d0b59ca6-7fd5-40f8-a4d6-1641a253fafa" />
+  <img 
+    src="https://github.com/user-attachments/assets/4a1c559b-aa7f-4af4-b211-6d8ed3c35e21"
+    alt="Foto em mirante com vista para cidade, lago e montanhas"
+    style="max-width: 100%; height: auto;"
+  />
 </div>
+
 
 ## 🚀 Tecnologias
 
