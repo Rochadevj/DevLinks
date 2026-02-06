@@ -1,33 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt=br">
+<html lang="pt-BR">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevLinks</title>
+    <title>Rocha | Dev </title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="container">
       <div id="profile">
-        <img
-          src="Avatar.png"
-          alt="Foto de Henrique Rocha
-        Sorrindo,usando camiseta verde,fundo na rua com árvores e o céu azul."
-        />
+        <div class="avatar-shell">
+          <img
+            src="Avatar.png"
+            alt="Homem em pé ao ar livre, usando camiseta escura e calça clara, posando em frente a um mirante de pedra com vista para uma cidade, lago e montanhas sob um céu azul com nuvens."
+          />
+        </div>
         <p>@hee_rocha</p>
       </div>
 
-<div id="switch" onclick="toggleMode()"> 
-  <button></button>
-  <span></span>
-</div>
+      <div
+        id="switch"
+        onclick="toggleMode()"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMode();}"
+        role="button"
+        tabindex="0"
+        aria-label="Alternar tema"
+      >
+        <span class="switch-handle"></span>
+        <span></span>
+      </div>
       <ul>
         <li>
           <a href="assets/Henrique Rocha currículo0.pdf" download
@@ -36,7 +44,7 @@
         </li>
 
         <li>
-          <a href="https://github.com/Rochadevj" target="_blank"
+          <a href="https://github.com/Rochadevj" target="_blank" rel="noopener noreferrer"
             >Explore meu GitHub</a
           >
         </li>
@@ -45,12 +53,13 @@
           <a
             href="https://www.linkedin.com/in/henrique-rocha-389609287/"
             target="_blank"
+            rel="noopener noreferrer"
             >Visite meu perfil no LinkedIn</a
           >
         </li>
 
         <li>
-          <a href="https://www.instagram.com/hee_rocha/" target="_blank"
+          <a href="https://www.instagram.com/hee_rocha/" target="_blank" rel="noopener noreferrer"
             >Confira meu perfil no Instagram</a
           >
         </li>
@@ -62,38 +71,47 @@
         </li>
       </ul>
       <div class="wrapper-clock">
-      <div class="display">
-        <div id="time"></div>
+        <div class="display">
+          <div id="time"></div>
+        </div>
       </div>
-      <span></span>
-      <span></span>
-    </div>
-      
-    <div id="social-links">
-  <a
-    href="https://www.linkedin.com/in/henrique-rocha-389609287/"
-    target="_blank"
-  >
-    <ion-icon name="logo-linkedin"></ion-icon>
-  </a>
+      <div id="social-links">
+        <a
+          href="https://www.linkedin.com/in/henrique-rocha-389609287/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
 
-  <a href="https://www.instagram.com/hee_rocha/" target="_blank">
-    <ion-icon name="logo-instagram"></ion-icon>
-  </a>
+        <a
+          href="https://www.instagram.com/hee_rocha/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
 
-  <a href="https://github.com/Rochadevj" target="_blank">
-    <ion-icon name="logo-github"></ion-icon>
-  </a>
-</div>
+        <a
+          href="https://github.com/Rochadevj"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+      </div>
 
       <footer>Desenvolvido com paixão pelo Rocha 🚀</footer>
     </div>
 
     <script src="./script.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="https://kit.fontawesome.com/8a0c3b2886.js" crossorigin="anonymous"></script>
-
-    <script src="/script.js"></script>
-
+    <script
+      src="https://kit.fontawesome.com/8a0c3b2886.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
