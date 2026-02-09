@@ -1,6 +1,15 @@
-function toggleMode () {
-const html = document.documentElement
-html.classList.toggle('light')
+function toggleMode() {
+  const html = document.documentElement
+  html.classList.toggle("light")
+  const theme = html.classList.contains("light") ? "light" : "dark"
+  localStorage.setItem("preferred-theme", theme)
+}
+
+function applySavedTheme() {
+  const savedTheme = localStorage.getItem("preferred-theme")
+  if (savedTheme === "light") {
+    document.documentElement.classList.add("light")
+  }
 }
 
 function updateClock() {
@@ -19,5 +28,13 @@ function updateClock() {
   time.textContent = `${formattedHours}:${minutes}:${seconds} ${dayNight}`
 }
 
+function updateFooterYear() {
+  const year = document.getElementById("current-year")
+  if (!year) return
+  year.textContent = new Date().getFullYear()
+}
+
+applySavedTheme()
 updateClock()
+updateFooterYear()
 setInterval(updateClock, 1000)
