@@ -10,7 +10,11 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rocha | Dev </title>
+    <meta
+      name="description"
+      content="Agregador de links do Henrique Rocha com currículo, GitHub, LinkedIn, Instagram e contato."
+    />
+    <title>Rocha | Dev</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -22,31 +26,39 @@
             alt="Homem em pé ao ar livre, usando camiseta escura e calça clara, posando em frente a um mirante de pedra com vista para uma cidade, lago e montanhas sob um céu azul com nuvens."
           />
         </div>
+        <h1>Henrique Rocha</h1>
         <p>@hee_rocha</p>
+        <p class="headline">Desenvolvedor Fullstack <br> React • Typescript • PHP • SQL • Bootstrap • Git</p>
+        <span class="status-pill">Disponível para projetos</span>
       </div>
 
-      <div
+      <button
         id="switch"
+        type="button"
         onclick="toggleMode()"
-        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMode();}"
-        role="button"
-        tabindex="0"
         aria-label="Alternar tema"
       >
         <span class="switch-handle"></span>
         <span></span>
-      </div>
+      </button>
       <ul>
         <li>
-          <a href="assets/Henrique Rocha currículo0.pdf" download
-            >📄 Baixar meu Currículo</a
-          >
+          <a href="assets/Henrique Rocha currículo0.pdf" download class="link-card">
+            <span class="link-tag">PDF</span>
+            <span class="link-label">Baixar meu currículo</span>
+          </a>
         </li>
 
         <li>
-          <a href="https://github.com/Rochadevj" target="_blank" rel="noopener noreferrer"
-            >Explore meu GitHub</a
+          <a
+            href="https://github.com/Rochadevj"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-card"
           >
+            <span class="link-tag">CODE</span>
+            <span class="link-label">Explore meu GitHub</span>
+          </a>
         </li>
 
         <li>
@@ -54,20 +66,30 @@
             href="https://www.linkedin.com/in/henrique-rocha-389609287/"
             target="_blank"
             rel="noopener noreferrer"
-            >Visite meu perfil no LinkedIn</a
+            class="link-card"
           >
+            <span class="link-tag">PRO</span>
+            <span class="link-label">Visite meu LinkedIn</span>
+          </a>
         </li>
 
         <li>
-          <a href="https://www.instagram.com/hee_rocha/" target="_blank" rel="noopener noreferrer"
-            >Confira meu perfil no Instagram</a
+          <a
+            href="https://www.instagram.com/hee_rocha/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-card"
           >
+            <span class="link-tag">SOCIAL</span>
+            <span class="link-label">Confira meu Instagram</span>
+          </a>
         </li>
 
         <li>
-          <a href="mailto:henriquerocha1357@gmail.com"
-            >Entre em contato por e-mail</a
-          >
+          <a href="mailto:henriquerocha1357@gmail.com" class="link-card">
+            <span class="link-tag">MAIL</span>
+            <span class="link-label">Entre em contato por e-mail</span>
+          </a>
         </li>
       </ul>
       <div class="wrapper-clock">
@@ -104,7 +126,7 @@
         </a>
       </div>
 
-      <footer>Desenvolvido com paixão pelo Rocha 🚀</footer>
+      <footer>Rocha • <span id="current-year"></span></footer>
     </div>
 
     <script src="./script.js"></script>
