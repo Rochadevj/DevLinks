@@ -19,6 +19,7 @@
   --surface-color-hover: rgba(18, 50, 83, 0.78);
   --highlight-color: rgba(95, 190, 255, 0.18);
   --accent-color: #5ecfff;
+  --accent-color-soft: rgba(94, 207, 255, 0.18);
   --avatar-shell-bg: linear-gradient(145deg, rgba(94, 207, 255, 0.38), rgba(121, 70, 255, 0.22));
   --avatar-glow: rgba(94, 207, 255, 0.3);
   --switch-bg-url: url(./assets/moon-stars.svg);
@@ -38,6 +39,7 @@
   --surface-color-hover: rgba(235, 245, 255, 0.92);
   --highlight-color: rgba(34, 131, 228, 0.14);
   --accent-color: #1879d6;
+  --accent-color-soft: rgba(24, 121, 214, 0.14);
   --avatar-shell-bg: linear-gradient(145deg, rgba(39, 143, 234, 0.36), rgba(87, 203, 190, 0.3));
   --avatar-glow: rgba(46, 137, 228, 0.2);
   --switch-bg-url: url(./assets/sun.svg);
@@ -137,14 +139,45 @@ body * {
   font-weight: 500;
   font-size: 0.96rem;
   letter-spacing: 0.05em;
-  margin-top: 12px;
+  margin-top: 10px;
   color: var(--muted-text);
+}
+
+#profile h1 {
+  margin-top: 14px;
+  font-size: clamp(1.15rem, 4vw, 1.38rem);
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
+
+#profile .headline {
+  font-size: 0.86rem;
+  letter-spacing: 0.04em;
+  opacity: 0.94;
+  margin-top: 12px;
+}
+
+#profile .status-pill {
+  margin-top: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-family: var(--font-tech);
+  font-size: 0.72rem;
+  letter-spacing: 0.07em;
+  color: var(--accent-color);
+  border: 1px solid rgba(115, 197, 255, 0.5);
+  background: var(--accent-color-soft);
 }
 
 #switch {
   position: relative;
+  display: block;
   width: 70px;
-  margin: 0 auto;
+  margin: 10px auto 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
   animation: fade-up 0.6s ease 0.08s both;
 }
 
@@ -221,8 +254,9 @@ ul li:nth-child(5) {
 ul li a {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 15px 20px;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 13px 14px;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.01em;
@@ -232,11 +266,47 @@ ul li a {
   transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
 }
 
+.link-tag {
+  min-width: 56px;
+  text-align: center;
+  padding: 7px 8px;
+  border-radius: 9px;
+  border: 1px solid rgba(115, 197, 255, 0.45);
+  background: rgba(8, 26, 44, 0.58);
+  color: var(--accent-color);
+  font-family: var(--font-tech);
+  font-size: 0.69rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.light .link-tag {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(67, 136, 196, 0.45);
+}
+
+.link-label {
+  flex: 1;
+}
+
+ul li a::after {
+  content: "↗";
+  font-size: 1.02rem;
+  color: var(--muted-text);
+  transform: translateX(0);
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
 ul li a:hover {
   transform: translateY(-2px);
   background: var(--surface-color-hover);
   border-color: rgba(117, 210, 255, 0.75);
   box-shadow: 0 10px 22px rgba(0, 12, 34, 0.32);
+}
+
+ul li a:hover::after {
+  transform: translateX(2px);
+  color: var(--accent-color);
 }
 
 ul li a:focus-visible {
@@ -295,7 +365,9 @@ ul li a:focus-visible {
 footer {
   padding-top: 22px;
   text-align: center;
-  font-size: 0.95rem;
+  font-family: var(--font-tech);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
   color: var(--muted-text);
   animation: fade-up 0.6s ease 0.5s both;
 }
@@ -325,8 +397,14 @@ a {
   }
 
   ul li a {
-    padding: 14px 14px;
-    font-size: 0.95rem;
+    padding: 12px 12px;
+    font-size: 0.92rem;
+    gap: 10px;
+  }
+
+  .link-tag {
+    min-width: 50px;
+    font-size: 0.64rem;
   }
 
   #social-links {
