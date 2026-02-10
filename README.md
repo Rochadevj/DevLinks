@@ -11,7 +11,7 @@
 
 <div align="center">
   <img 
-    src="https://github.com/user-attachments/assets/4a1c559b-aa7f-4af4-b211-6d8ed3c35e21"
+    src="https://github.com/user-attachments/assets/0e82814f-de2d-4e71-a173-ee0e75369868"
     alt="Foto em mirante com vista para cidade, lago e montanhas"
     style="max-width: 100%; height: auto;"
   />
