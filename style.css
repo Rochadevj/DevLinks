@@ -167,6 +167,20 @@ body * {
   color: var(--accent-color);
   border: 1px solid rgba(115, 197, 255, 0.5);
   background: var(--accent-color-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+#profile .status-pill:hover {
+  transform: translateY(-1px);
+  border-color: rgba(133, 214, 255, 0.72);
+  background: rgba(94, 207, 255, 0.24);
+  box-shadow: 0 8px 16px -10px rgba(95, 191, 255, 0.8);
+}
+
+.light #profile .status-pill:hover {
+  border-color: rgba(24, 121, 214, 0.52);
+  background: rgba(24, 121, 214, 0.18);
+  box-shadow: 0 8px 16px -10px rgba(24, 121, 214, 0.45);
 }
 
 #switch {
