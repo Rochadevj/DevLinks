@@ -10,11 +10,8 @@
 </p>
 
 <div align="center">
-  <img 
-    src="https://github.com/user-attachments/assets/0e82814f-de2d-4e71-a173-ee0e75369868"
-    alt="Foto em mirante com vista para cidade, lago e montanhas"
-    style="max-width: 100%; height: auto;"
-  />
+<img width="629" height="741" alt="image" src="https://github.com/user-attachments/assets/8d11c1f1-15aa-47f7-b94a-0bc75b1742ba" />
+
 </div>
 
 
